@@ -119,13 +119,9 @@ function buildCharts(sample) {
 
     // D3 -- 1. Create a variable that filters the metadata array for the object with the desired sample number.
     var metadata = data.metadata.filter(sampleObj => sampleObj.id == sample);
-    
-    //// Create a variable that holds the first sample in the array.
 
     // 2. Create a variable that holds the first sample in the metadata array.
     var metaSample = metadata[0];
-
-    //// Create variables that hold the otu_ids, otu_labels, and sample_values.
 
     // 3. Create a variable that holds the washing frequency.
     var washFreq = parseFloat(metaSample.wfreq);
